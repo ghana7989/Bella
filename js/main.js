@@ -51,9 +51,9 @@ function moveImages(e) {
   // extremities are [-.5,.5]
   const xPos = offsetX / clientWidth - 0.5
   const yPos = offsetY / clientHeight - 0.5
-  const leftImages = gsap.utils.toArray(".hg__image")
+  const images = gsap.utils.toArray(".hg__image")
   const modifier = index => index * 2 + .5
-  leftImages.forEach((image, index) => {
+  images.forEach((image, index) => {
     gsap.to(image,
       {
         duration: 1.2,
